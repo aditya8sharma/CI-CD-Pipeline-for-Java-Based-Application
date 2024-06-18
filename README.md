@@ -49,10 +49,10 @@ By default, Jenkins is not be accessible to the external world due to the inboun
 http://<ec2-instance-public-ip>:8080
 
 Note: If you don't want to allow `All Traffic` to your EC2 instance
-      1. Delete the inbound traffic rule for the instance
-      2. Edit the inbound traffic rule to only allow custom TCP port `8080`
+      - Delete the inbound traffic rule for the instance
+      - Edit the inbound traffic rule to only allow custom TCP port `8080`
   
-After logging in to Jenkins, 
+To find the password, 
       - Run - `sudo cat /var/lib/jenkins/secrets/initialAdminPassword`
       - Enter the Administrator password
       
